@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:padding="20dp">
+<!--定义"登陆界面"四个字的文本框，放在最上方的中央  -->
+    <TextView
+        android:id="@+id/LoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="登陆界面" />
+<!--定义输入用户名的文本编辑框  -->
+    <EditText
+        android:id="@+id/LoginId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="请输入登录Id" />
+<!--定义输入密码的文本编辑框  -->
+    <EditText
+        android:id="@+id/LoginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="请输入登录密码"
+        android:inputType="textPassword" />
+<!--定义“取消”的按钮  -->
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LoginPassword"
+        android:layout_centerHorizontal="true"
+        android:text="登录" />
+</RelativeLayout>
